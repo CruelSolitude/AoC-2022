@@ -17,6 +17,6 @@ int main() {
 
   sort(sums.rbegin(), sums.rend());
 
-  cout << "Part 1:" << sums[0] << "\n";
-  cout << "Part 2:" << sums[0] + sums[1] + sums[2]<< "\n";
+  cout << "Part 1: " << sums[0] << "\n";
+  cout << "Part 2: " << sums[0] + sums[1] + sums[2]<< "\n";
 }
