@@ -33,3 +33,6 @@
 
 # Template
 template.cpp
+
+# Input
+*.txt
