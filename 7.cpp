@@ -48,13 +48,17 @@ int main() {
       }
     }  
   }
-  int result = 70000000;
+  int part1 = 0;
+  int part2 = 70000000;
   int free = 70000000 - (m.find("/0"))->second;
   for (auto &i : m) {
     if (i.second >= 30000000 - free) {
-      result = min(result, i.second);
+      part2 = min(part2, i.second);
     }
+    if (i.second <= 100000)
+      part1 += i.second;
   } 
-  cout << result << "\n";
+  cout << "Part 1: " << part1 << "\n";
+  cout << "Part 2: " << part2 << "\n";
 }
 
